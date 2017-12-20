@@ -288,6 +288,7 @@ def error(bot, update, error):
 
 if __name__ == '__main__':
 	LIST_OF_ADMINS = []
+	TOKEN = ''
 	#Logging setup
 	logging.basicConfig(filename='history.log',
 		format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -298,7 +299,7 @@ if __name__ == '__main__':
 	#Hosts list creating
 	hosts = Hosts()
 	# Create the Updater and pass it your bot's token.
-	updater = Updater(token='')
+	updater = Updater(token=TOKEN)
 	#Queue with hosts_ping
 	monitor = Monitor()
 	#Handlers adding
